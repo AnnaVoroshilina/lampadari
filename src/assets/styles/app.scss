@@ -1,0 +1,13 @@
+@import '~normalize.css/normalize.css';
+@import 'main';
+@import 'variables';
+@import '../fonts/fonts.css';
+@import 'mixins';
+@import 'components/shared/burger-menu';
+@import 'components/shared/close-button';
+@import 'components/shared/input';
+@import 'components/header';
+@import 'components/slider';
+@import 'components/login-popup';
+@import 'components/footer';
+@import 'components/shared/bottom-panel';

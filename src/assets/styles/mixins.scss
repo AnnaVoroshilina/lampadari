@@ -1,0 +1,31 @@
+@mixin font($size, $height, $color: $classicWhite, $family: false) {
+  font-size: $size;
+  line-height: $height;
+  color: $color;
+  font-family: $family;
+
+  @if ($family == false) {
+    font-family: $openSans;
+  }
+}
+
+@mixin slideStyle($img) {
+  display: none;
+  width: 100%;
+  height: calc(100% - 130px);
+  background-image: $img;
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: 805px) {
+    height: calc(100% - 167px);
+  }
+
+  @media (max-width: 768px) {
+    height: calc(100% - 125px);
+  }
+
+  @media (max-width: 420px) {
+    height: calc(100% - 100px);
+  }
+}

@@ -1,0 +1,133 @@
+.main__header {
+  width: 100%;
+  background-color: $backgroundColor;
+}
+
+.header-content {
+  width: $contentWidth;
+  margin: 0 20px;
+}
+
+.enter__block {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.enter {
+  @include font($size: 14px, $height: 24px);
+  cursor: pointer;
+
+  &:after {
+    display: inline-block;
+    width: 9px;
+    height: 13px;
+    margin-left: 10px;
+    background-image: $lock;
+    content: '';
+  }
+
+  &:hover {
+    color: $hoverBiege;
+    transition-duration: 0.3s;
+  }
+}
+
+.menu__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding-bottom: 18px;
+}
+
+.navmenu {
+  padding-top: 18px;
+  display: none;
+  z-index: 6;
+
+  @media (min-width: 769px) {
+    display: block;
+  }
+
+  .navlink {
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.navlink {
+  @include font($size: 18px, $height: 24px);
+  position: relative;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 0 7px 0 17px;
+
+  &:hover {
+    color: $hoverBiege;
+    transition-duration: 0.3s;
+
+    .dropdown-menu__list {
+      transform: scaleY(1);
+      transition-duration: 0.5s;
+    }
+  }
+}
+
+.dropdown-menu {
+  display: inline-block;
+
+  span {
+    @include font($size: 18px, $height: 24px);
+    font-weight: 400;
+    padding: 0 7px 0 17px;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $hoverBiege;
+      transition-duration: 0.3s;
+    }
+  }
+}
+
+.dropdown-menu__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin: 18px 0 0;
+  padding: 11px 9px;
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: column;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition-duration: 0.5s;
+
+  .navlink {
+    display: block;
+    padding: 3px 0 3px 8px;
+    width: 124px;
+
+    @include font($size: 16px, $height: 21px);
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      color: $hoverBiege;
+      transition-duration: 0.3s;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $classicWhite;
+    }
+  }
+}
+
+.logo {
+  @media (max-width: 420px) {
+    width: 195px;
+  }
+}

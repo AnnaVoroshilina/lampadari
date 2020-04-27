@@ -1,0 +1,36 @@
+.close-button {
+  position: relative;
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+
+    &:after,
+    &:before {
+      background-color: #fff;
+    }
+  }
+
+  &:after {
+    position: absolute;
+    left: 9px;
+    width: 2px;
+    height: 23px;
+    background-color: rgba(255, 255, 255, 0.63);
+    transform: rotate(-45deg);
+    content: ' ';
+  }
+
+  &:before {
+    position: absolute;
+    left: 9px;
+    width: 2px;
+    height: 23px;
+    background-color: rgba(255, 255, 255, 0.63);
+    transform: rotate(45deg);
+    content: ' ';
+  }
+}

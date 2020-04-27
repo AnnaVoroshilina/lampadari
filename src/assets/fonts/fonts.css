@@ -1,0 +1,26 @@
+@font-face {
+  font-weight: normal;
+  font-family: 'Open-Sans';
+  font-style: normal;
+  src: url('open-sans/OpenSans.eot');
+  src: url('open-sans/OpenSans.woff') format('woff');
+  src: url('open-sans/OpenSans.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Playfair-Display';
+  font-style: normal;
+  src: url('playfair-display/PlayfairDisplay.eot');
+  src: url('playfair-display/PlayfairDisplay.woff') format('woff');
+  src: url('playfair-display/PlayfairDisplay.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Playfair-Display-Italic';
+  font-style: normal;
+  src: url('playfair-display/PlayfairDisplay-Italic.eot');
+  src: url('playfair-display/PlayfairDisplay-Italic.woff') format('woff');
+  src: url('playfair-display/PlayfairDisplay-Italic.ttf') format('truetype');
+}
